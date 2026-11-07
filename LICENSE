@@ -1,0 +1,14 @@
+QnVoice synthetic voice reference terms
+
+QnSub Software Solutions permits personal and commercial use of the
+synthetic voice references and speech generated with them at no charge.
+An app that uses a reference for speech synthesis must cite the
+corresponding QnVoice paper in its About screen, credits, or public
+documentation.
+
+For the shared reference, cite the Filipino preprint series
+https://doi.org/10.5281/zenodo.24022271
+For the research reference, cite the Cebuano white paper in this repository.
+
+The separately hosted VoxCPM2 weights use the Apache License 2.0.
+See Apache-2.0.txt and NOTICE for upstream terms and attribution.

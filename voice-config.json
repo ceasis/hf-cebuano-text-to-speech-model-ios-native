@@ -1,0 +1,85 @@
+{
+  "language": "ceb",
+  "format": "VoxCPM2 AudioVAE reference",
+  "shared_weights": {
+    "repository": "CholoAsis/qnvoice-filipino-voxcpm2-gguf",
+    "revision": "5b912ca3328145b384134040dcc520114f000e32",
+    "license": "Apache-2.0",
+    "files": {
+      "voice-language.gguf": {
+        "bytes": 1002374880,
+        "sha256": "75806a47e11d48499a9ebcb9c0ca0750117975d08364043ecf7229625aaa160d"
+      },
+      "voice-acoustic.gguf": {
+        "bytes": 1077740192,
+        "sha256": "3c075e9b867fe0a43294c0d0880f72b2646b051faa01dca298f5e12c1826539b"
+      }
+    }
+  },
+  "reference": {
+    "description": "Shared QnVoice synthetic voice reference selected on the 16-phrase comparison.",
+    "sample_rate": 16000,
+    "sample_count": 71683,
+    "pcm_channels": 1,
+    "encoded_shape": [
+      29,
+      4,
+      64
+    ],
+    "encoded_dtype": "float32-le",
+    "generator": "mlx-community/VoxCPM2-4bit",
+    "generator_revision": "dc9e5c187858da5f4a13dc4c247e297339216381",
+    "seed": 1302,
+    "files": {
+      "voice-reference.wav": {
+        "bytes": 143410,
+        "sha256": "082bd750066073c76f248efa63548e1c8662c086360eccc15cdcf8ae27209d50"
+      },
+      "voice-reference-features.f32": {
+        "bytes": 29696,
+        "sha256": "bb3337d73ac9a896083d6307697f375fb925997c264761ccd3ee2edf8fab33b1"
+      }
+    }
+  },
+  "synthesis": {
+    "runtime": "tc-mb/llama.cpp-omni",
+    "runtime_revision": "e0eca9d8f57ac8f5a5ad6191a8007b93436c1e71",
+    "flow_steps": 6,
+    "cfg": 2,
+    "seed": 98000,
+    "sample_rate": 48000
+  },
+  "research_reference": {
+    "sample_rate": 16000,
+    "sample_count": 71683,
+    "pcm_channels": 1,
+    "encoded_shape": [
+      29,
+      4,
+      64
+    ],
+    "encoded_dtype": "float32-le",
+    "generator": "mlx-community/VoxCPM2-4bit",
+    "generator_revision": "dc9e5c187858da5f4a13dc4c247e297339216381",
+    "description": "A quiet, friendly adult man speaking Cebuano naturally. Read the text smoothly, with clear vowels, restrained pitch changes and a short pause between sentences.",
+    "text": "Maayong adlaw. Magkita ta unya sa atong balay.",
+    "seed": 3681,
+    "flow_steps": 9,
+    "cfg": 2,
+    "files": {
+      "research-reference.wav": {
+        "bytes": 143410,
+        "sha256": "08cb2924edc54384012956859eb08ae302f49822979f2e7f7c5b4e544792ac52"
+      },
+      "research-reference-features.f32": {
+        "bytes": 29696,
+        "sha256": "2f46fa8638dfd2212b2130f08a4201ba63f415e361900e4f0efbd0e2b2237b0c"
+      }
+    }
+  },
+  "text_preparation": {
+    "maximum_characters": 400,
+    "maximum_chunk_characters": 120,
+    "preferred_locale": "ceb-PH"
+  }
+}

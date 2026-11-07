@@ -1,0 +1,12 @@
+QnVoice Cebuano voice model sources
+
+Cebuano speech uses the app’s shared VoxCPM2 BaseLM Q4_K_M and Q8_0 acoustic model. OpenBMB and ModelBest release VoxCPM2 under Apache 2.0. The model weights and licenses are attributed under Filipino model licenses in Settings.
+https://huggingface.co/openbmb/VoxCPM2
+
+Cebuano shares the original synthetic reference and precomputed AudioVAE features used by QnVoice for Filipino. The reference was generated with mlx-community/VoxCPM2-4bit at revision dc9e5c187858da5f4a13dc4c247e297339216381.
+https://doi.org/10.5281/zenodo.24022271
+
+English-to-Cebuano translation uses Helsinki-NLP/opus-mt-en-ceb under Apache 2.0. QnVoice exports it to ONNX, dynamically quantizes supported weights to int8 and extracts the Marian tokenizer assets.
+https://huggingface.co/Helsinki-NLP/opus-mt-en-ceb/tree/e94aee550a4d15c5b5da28a4be4fb2cb0dede50a
+
+The bundled translation and synthesis run on the device.
